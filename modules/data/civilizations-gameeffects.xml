@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameEffects xmlns="GameEffects">
 	<!-- Attributes -->
-	<Modifier id="MOD_VIKING_FORBID_CITIES_FROM_TOWNS" collection="COLLECTION_OWNER" effect="EFFECT_ADJUST_FORBID_UPGRADE_TOWN_TO_CITY"></Modifier>
+	<Modifier id="MOD_VIKING_FORBID_CITIES_FROM_TOWNS" collection="COLLECTION_OWNER" effect="EFFECT_ADJUST_CITY_LIMIT" permanent="true">
+		<Argument name="Amount">1</Argument>
+	</Modifier>
+
 	<Modifier id="TRAIT_MOD_NAUST_RESTORE_MOVEMENT" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_RESTORE_UNIT_MOVEMENT">
 		<SubjectRequirements>
 			<Requirement type="REQUIREMENT_PLOT_HAS_CONSTRUCTIBLE">
